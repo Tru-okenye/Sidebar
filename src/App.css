@@ -1,0 +1,84 @@
+:root{
+    box-sizing: border-box;
+    --transition: all 0.3s linear;
+    --clr-primary-5: hsl(205, 78%, 60%);
+}
+
+a {
+    text-decoration: none;
+    
+}
+.links{
+    display: flex;
+}
+li{
+    list-style-type: none;
+}
+.modal{
+    
+    background-color: pink;
+    width: 15rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+.icon{
+position: absolute;
+top: 0;
+right: 0;
+margin-top: 0.5rem;
+margin-right: 0.5rem;
+background-color: blueviolet;
+}
+.btn{
+    background-color:black;
+    color: white;
+    display: inline-block;
+    
+    align-content: center;
+    transition: var(--transition);
+    padding: 0.375rem 0.75rem;
+    margin: 0.5rem;
+    }
+    
+
+.sidebar {
+    background-color: gray;
+    
+}
+.display{
+    display: none;
+    
+}
+.ptn{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+}
+.sidebar-toggle {
+    position: fixed;
+    top: 2rem;
+    left: 3rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
